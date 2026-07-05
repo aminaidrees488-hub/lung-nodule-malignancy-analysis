@@ -1,10 +1,9 @@
 # Study of Machine Learning Models for Lung Nodule Malignancy
 
-This repository contains the official dataset and programmatic framework for the statistical evaluation and machine learning-based classification of lung nodule malignancy risk. 
+This repository contains a synthetic dataset developed for a machine learning project on lung nodule classification. 
 
 ## 📌 Project Overview
-The objective of this study is to implement and benchmark robust binary classification models to predict the malignancy grade of lung nodules. By integrating classical clinical risk indicators with advanced computational morphology and radiomic texture features, this framework aims to assist in the early and accurate assessment of pulmonary oncological risks.
-
+This dataset was created for a machine learning project on lung nodule classification. It contains clinical, demographic, radiomic, and fractal features collected to classify lung nodules as Benign or Malignant. The dataset can be used for exploratory data analysis, feature engineering, machine learning model development, and classification performance evaluation.
 ## 📊 Dataset Specifications
 The primary data is hosted in the structured repository file: **`Final_Lung_Nodule_Data_Updated (1).csv`**
 
@@ -18,13 +17,15 @@ The primary data is hosted in the structured repository file: **`Final_Lung_Nodu
 3. **Radiomic Texture & Fractal Descriptors:** Mean Intensity, Standard Deviation, Entropy, Box-Counting Fractal Dimension ($FD_{bc}$), and Power Spectrum Fractal Dimension ($FD_{ps}$).
 
 ## 🚀 Quick Start & Data Loading
-To replicate the exploratory data analysis or build machine learning pipelines (e.g., Random Forest, Gradient Boosting, Gaussian Naive Bayes), you can load the dataset using the following Python snippet:
-
+Use the following Python code to load the dataset into a Pandas DataFrame for analysis and machine learning tasks.
 ```python
 import pandas as pd
 
 # Load dataset
 df = pd.read_csv("Final_Lung_Nodule_Data_Updated (1).csv")
 
-# Verify integrity
-print(f"Data Loaded Successfully. Shape: {df.shape}")
+# Display dataset shape
+print(f"Dataset loaded successfully! Shape: {df.shape}")
+
+# Preview the first five rows
+df.head()

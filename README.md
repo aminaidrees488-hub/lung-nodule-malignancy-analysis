@@ -14,8 +14,8 @@ The primary data is hosted in the structured repository file: **`Final_Lung_Nodu
 ### Feature Domains Included:
 1. **Patient Demographics & History:** Age, Gender, Smoking History (Years), Family History, and Previous Malignancy status.
 2. **Geometric Features:** Nodule Diameter (mm), Area, Perimeter, Sphericity, Convexity, and Edge Type (Smooth, Lobulated, Spiculated).
-3. **Radiomic Texture & Fractal Descriptors:** Mean Intensity, Standard Deviation, Entropy, Box-Counting Fractal Dimension ($FD_{bc}$), and Power Spectrum Fractal Dimension ($FD_{ps}$).
-
+3. **Radiomic Features:** Mean Intensity, Standard Deviation, Entropy.
+4. **Fractal Featurs:**  Box-Counting Fractal Dimension ($FD_{bc}$), and Power Spectrum Fractal Dimension ($FD_{ps}$).
 ## 🚀 Quick Start & Data Loading
 Use the following Python code to load the dataset into a Pandas DataFrame for analysis and machine learning tasks.
 ```python
